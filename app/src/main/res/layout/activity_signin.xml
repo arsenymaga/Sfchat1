@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:alpha="0"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/bear_icon" />
+
+    <EditText
+        android:id="@+id/editTextTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textColor="@color/blue"
+        android:hint="Your name"
+        android:fontFamily="@font/stalinistone_regular"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/stalinistone_regular"
+        android:textColor="@color/blue"
+        android:hint="Your e-mail"
+        android:inputType="textEmailAddress"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/stalinistone_regular"
+        android:textColor="@color/blue"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextRepeatPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/stalinistone_regular"
+        android:textColor="@color/blue"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/stalinistone_regular"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="10dp"
+        android:text="Sign in" />
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:fontFamily="@font/stalinistone_regular"
+        android:textColor="@color/blue"
+        android:onClick="loginMode"
+        android:text="Tap to login"
+        android:textSize="18sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>
